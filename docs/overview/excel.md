@@ -2,7 +2,7 @@
 title: Office Scripts in Excel
 description: A brief introduction to the Action Recorder and Code Editor for Office Scripts.
 ms.topic: overview
-ms.date: 01/19/2024
+ms.date: 08/08/2024
 ms.localizationpriority: high
 ---
 
@@ -28,7 +28,7 @@ As an example, imagine at the start of each work day you open a .csv file from a
 
 The Action Recorder records actions you take in Excel and saves them as a script. With the Action recorder running, you can capture the Excel actions as you edit cells, change formatting, and create tables. The resulting script can be run on other worksheets and workbooks to recreate your original actions.
 
-More information about the Action Recorder can be found in the article [Record your actions as Office Script](https://support.microsoft.com/office/record-your-actions-as-office-scripts-453ab58d-708f-40a9-ab87-99a743bfa69a).
+More information about the Action Recorder can be found in the article [Record your actions as Office Script](https://support.microsoft.com/office/453ab58d-708f-40a9-ab87-99a743bfa69a).
 
 ## Code Editor
 
@@ -56,6 +56,9 @@ Add buttons that run scripts to help your colleagues discover your valuable solu
 
 ## Schedule scripts to run automatically
 
+> [!IMPORTANT]
+> Script scheduling is temporarily disabled within Office Scripts. Existing scheduled scripts will continue to run. In the interim, use Power Automate to create a flow and schedule your scripts to run in that flow. To learn more, see [Run scripts with Power Automate](../develop/power-automate-integration.md).
+
 Set your scripts to run every day and keep your workbook up-to-date. Once you have your script, you can set it to automatically run on the workbook at regular intervals. A behind-the-scenes Power Automate flow ensures everything happens, even when the workbook is closed.
 
 To schedule a script, open the script in the Code Editor. Open the **Script scheduling** section and complete the sign in process to Excel through Power Automate. Set how often you want the script to run and select **Create flow** to begin.
@@ -73,7 +76,8 @@ Complete the [Office Scripts in Excel tutorial](../tutorials/excel-tutorial.md) 
 ## See also
 
 - [Fundamentals for Office Scripts in Excel](../develop/scripting-fundamentals.md)
+- [Office Scripts samples and scenarios](../resources/samples/samples-overview.md)
 - [Office Scripts API reference](/javascript/api/office-scripts/overview)
 - [Platform limits and requirements with Office Scripts](../testing/platform-limits.md)
-- [Office Scripts settings in M365](https://support.office.com/article/office-scripts-settings-in-m365-19d3c51a-6ca2-40ab-978d-60fa49554dcf)
+- [Office Scripts settings in M365](/microsoft-365/admin/manage/manage-office-scripts-settings)
 - [Sharing Office Scripts in Excel](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b)
